@@ -2,8 +2,9 @@
 
 // 使用HTTP协议对外提供Web服务
 
-require_once __DIR__ . '/vendor/autoload.php';
+//require_once __DIR__ . '/vendor/autoload.php';
 use Workerman\Worker;
+require_once '../vendor/workerman/workerman/Autoloader.php';
 
 // #### http worker ####
 // 创建一个Worker监听2345端口，使用http协议通讯
