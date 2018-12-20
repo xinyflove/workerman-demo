@@ -10,6 +10,11 @@ struct
   char         file[total_len - BinaryTransfer::PACKAGE_HEAD_LEN - name_len]; // 文件数据
 }
 */
+/**
+ * 协议样本
+*****logo.png******************
+ * 其中首部四字节*号代表一个网络字节序的unsigned int数据，为不可见字符，第5个*是用一个字节存储文件名长度，紧接着是文件名，接着是原始的二进制文件数据
+ */
 
 namespace Protocols;
 class BinaryTransfer
